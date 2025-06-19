@@ -28,7 +28,7 @@ class PasienController extends Controller
         }
 
         // Kirim ke API Flask
-        $response = Http::post('http://127.0.0.1:5000/predict', [
+        $response = Http::post('http://sistem-klasifikasi-pengidap-penyakit-jantung-be-production.up.railway.app/predict', [
             'features' => $fitur
         ]);
 
